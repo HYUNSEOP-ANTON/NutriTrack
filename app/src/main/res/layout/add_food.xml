@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp">
+
+    <EditText
+        android:id="@+id/foodNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="음식 이름" />
+
+    <EditText
+        android:id="@+id/kcalInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="칼로리 (Kcal)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/carbInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="탄수화물 (g)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/proteinInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="단백질 (g)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/FatInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="지방 (g)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/gramInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="그램 (g)"
+        android:inputType="text" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.endproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_nav_today_add"
+            app:destination="@id/nav_today_add" />
+        <action
+            android:id="@+id/action_homeFragment_to_nav_today_delete"
+            app:destination="@id/nav_today_delete" />
+        
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.example.endproject.ui.user.UserFragment"
+        android:label="@string/user_info"
+        tools:layout="@layout/fragment_user"/>
+
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="com.example.endproject.ui.food.FoodFragment"
+        android:label="음식 데이터베이스"
+        tools:layout="@layout/fragment_food" />
+
+    <!-- 도움말 부분,,,, 네비게이션으로 해야 오류안남 ... -->
+
+    <fragment
+        android:id="@+id/nav_tutorial"
+        android:name="com.example.endproject.ui.tutorial.TutorialFragment"
+        android:label="도움말"
+        tools:layout="@layout/fragment_tutorial">
+
+        <action
+            android:id="@+id/action_tutorialFragment_to_tutorialDBFragment"
+            app:destination="@id/nav_tutorial_db"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tutorialFragment_to_tutorialDietFragment"
+            app:destination="@id/nav_tutorial_diet"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tutorial_db"
+        android:name="com.example.endproject.ui.tutorial.TutorialDBFragment"
+        android:label="음식 추가하는 법"
+        tools:layout="@layout/fragment_tutorial_db">
+        <action
+            android:id="@+id/action_tutorialDBFragment_to_tutorialFragment"
+            app:destination="@id/nav_tutorial"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tutorial_diet"
+        android:name="com.example.endproject.ui.tutorial.TutorialDietFragment"
+        android:label="식단 설정 팁"
+        tools:layout="@layout/fragment_tutorial_diet">
+        <action
+            android:id="@+id/action_tutorialDietFragment_to_tutorialFragment"
+            app:destination="@id/nav_tutorial"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_today_add"
+        android:name="com.example.endproject.ui.today.TodayAddFragment"
+        android:label="오늘의 식단에 음식 추가!">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_today_delete"
+        android:name="com.example.endproject.ui.today.TodayDeleteFragment"
+        android:label="오늘 식단에서 음식 삭제">
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- 기본 색 조합 부분 -->
+    <color name="simpleBlue_main">#4A90E2</color> <!-- 메인 블루 -->
+    <color name="simpleBlue_accent">#50E3C2</color> <!-- 포인트 (민트) -->
+    <color name="background_light">#F2F2F2</color> <!-- 배경용 연회색 -->
+    <color name="text_dark">#222222</color> <!-- 텍스트용 진회색 -->
+    <color name="divider">#B0BEC5</color>
+    <color name="row_light_blue">#E3F2FD</color>
+</resources>

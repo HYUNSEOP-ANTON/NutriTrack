@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/tutorial_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="안녕하세요!\nNutriFit에 오신 걸 환영해요 🎉"
+            android:textColor="#007AFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="이제부터 매일 먹는 음식을 간편하게 \n기록해보세요.\n자주 먹는 음식은 미리 등록해두면 더 빠르게 선택할 수 있어요!"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="매일 아침 공복 몸무게를 입력해 주세요.\n입력한 몸무게와 목표에 맞춰 오늘의 권장 섭취 칼로리를 자동으로 계산해드려요."
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="기록한 식단은 홈 화면에서 한눈에 \n확인할 수 있어요.\n탄수화물, 단백질, 지방, 그리고 총 섭취 칼로리를\n원형 차트와 함께 보기 쉽게 시각화해드려요."
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="다이어트, 벌크업, 린메스 업 모두 다 \nNutriFit이 도와드릴게요💪"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="더 궁금한 점은 여기서 확인 해주세요!"
+            android:textColor="#007AFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnDBTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#EAF4FF"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            android:text="📋 음식 추가는 어떻게 하나요?"
+            android:textColor="#007AFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btnDietTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAF4FF"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            android:text="🍱 식단 관리가 처음이에요! 도와주세요"
+            android:textAllCaps="true"
+            android:textColor="#007AFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
