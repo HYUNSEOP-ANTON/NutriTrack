@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add_food"
+        android:icon="@drawable/ic_add"
+        android:title="음식 추가"
+        android:iconTint="@color/text_dark"
+        app:showAsAction="ifRoom"
+    />
+
+    <item
+        android:id="@+id/action_delete_food"
+        android:icon="@drawable/ic_delete"
+        android:title="음식 삭제"
+        android:iconTint="@color/text_dark"
+        app:showAsAction="ifRoom" />
+</menu>

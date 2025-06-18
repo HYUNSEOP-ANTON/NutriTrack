@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/nameR"
+        android:textAlignment="center"
+        android:textColor="@color/text_dark" />
+
+    <TextView
+        android:id="@+id/foodCalorie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="칼로리"
+        android:textAlignment="center"
+        android:textColor="@color/text_dark" />
+
+    <TextView
+        android:id="@+id/foodCarb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/CarbR"
+        android:textColor="@color/text_dark"/>
+
+    <TextView
+        android:id="@+id/foodProtein"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/ProR"
+        android:textColor="@color/text_dark"/>
+
+    <TextView
+        android:id="@+id/foodFat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/FatR"
+        android:textColor="@color/text_dark"/>
+</LinearLayout>
